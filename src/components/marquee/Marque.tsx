@@ -16,18 +16,11 @@ const Marque = () => {
             background: "linear-gradient(90deg, #8A2BE2 0%, #FF69B4 100%)", // Purple to Pink gradient
           }}
         >
-          {/* The dotted pattern lines - placeholder for more complex CSS if needed */}
-          {/* <div className="absolute inset-0 z-0 opacity-30 pointer-events-none"> */}
-          {/* If you have a dotted background, define it via custom CSS or Tailwind config */}
-          {/* Example: <div className="absolute inset-x-0 bottom-0 h-4 bg-dots-pattern bg-repeat-x"></div> */}
-          {/* </div> */}
-
-          {/* Marquee effect for the text */}
           <Marquee
-            gradient={false} // Disable gradient if not needed for seamless scroll
-            speed={50} // Adjust speed as desired
-            pauseOnHover={true} // Pause animation on hover
-            className="z-10" // Ensure marquee content is above background patterns
+            gradient={false}
+            speed={50}
+            pauseOnHover={true}
+            className="z-10"
           >
             <div
               className="

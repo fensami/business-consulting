@@ -18,7 +18,6 @@ const HeaderTop = () => {
     <div className="container mx-auto mt-5">
       <div className="bg-gradient-to-r from-[#f8f9fc] to-[#fdfdff] py-[19px] shadow-sm rounded-[10px]">
         <div className=" flex flex-wrap justify-between items-center text-sm text-gray-600 px-[30px]">
-          {/* Left: Location and Email */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 font-medium text-[14px]">
               <FaMapMarkerAlt className="text-gray-500" />
@@ -31,14 +30,12 @@ const HeaderTop = () => {
             </div>
           </div>
 
-          {/* Center: Logo */}
           <div className="w-[200px] h-[32px] relative">
             <Link href="/">
               <Image src={logo} alt="logo" fill />
             </Link>
           </div>
 
-          {/* Right: Language and Socials */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 cursor-pointer">
               <IoGlobeOutline />

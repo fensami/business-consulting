@@ -1,8 +1,6 @@
-// components/RegisteredUsersDisplay.jsx
-
 import React from "react";
 import Image from "next/image";
-import { FiPlus } from "react-icons/fi"; // Importing a plus icon from Feather Icons
+import { FiPlus } from "react-icons/fi";
 
 const RegisteredUsersDisplay = () => {
   return (

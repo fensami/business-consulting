@@ -1,21 +1,17 @@
-// components/ConsultingCardSlider.jsx
-"use client"; // Important for client-side Swiper functionality
+"use client";
 
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper modules
-import { EffectCards, Pagination, Autoplay } from "swiper/modules";
+import { EffectCards, Autoplay } from "swiper/modules";
 import { TbArrowBigUpLines } from "react-icons/tb";
 
-// Dummy data for the consulting cards
 const consultingCards = [
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/dsc0hliud/image/upload/v1751771837/Growth_Img_ksmiaf.png", // Replace with your image path
+      "https://res.cloudinary.com/dsc0hliud/image/upload/v1751771837/Growth_Img_ksmiaf.png",
     tag: "Service-4",
     title: "One-to-one Consulting",
     description:
@@ -25,7 +21,7 @@ const consultingCards = [
   {
     id: 2,
     image:
-      "https://res.cloudinary.com/dsc0hliud/image/upload/v1751771838/Growth_Img_1_dk9tqv.png", // Replace with your image path
+      "https://res.cloudinary.com/dsc0hliud/image/upload/v1751771838/Growth_Img_1_dk9tqv.png",
     tag: "Service-5",
     title: "Business Strategy",
     description:
@@ -35,7 +31,7 @@ const consultingCards = [
   {
     id: 3,
     image:
-      "https://res.cloudinary.com/dsc0hliud/image/upload/v1751771837/Growth_Img_2_zgx4jz.png", // Replace with your image path
+      "https://res.cloudinary.com/dsc0hliud/image/upload/v1751771837/Growth_Img_2_zgx4jz.png",
     tag: "Service-6",
     title: "Financial Planning",
     description:
@@ -59,30 +55,27 @@ const ConsultingCardSlider = () => {
           <span>Know about us</span>
         </div>
         {/* Main Heading */}
-        <h2 className=" text-gray-900 mb-6 text-5xl font-semibold  ">
+        <h2 className=" text-gray-900 mb-[70px] text-5xl font-semibold  ">
           Our Core Services
         </h2>
 
         <Swiper
           direction="vertical"
-          effect={"cards"} // <--- KEY EFFECT for the stacked look
-          grabCursor={true} // Visual cue for dragging
-          centeredSlides={true} // Active slide centered
-          slidesPerView={1} // Only one card is "active" at a time in the center
-          loop={true} // For continuous loop
-          modules={[EffectCards, Autoplay]} // Include Pagination if you want dots
+          effect={"cards"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={1}
+          loop={true}
+          modules={[EffectCards, Autoplay]}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
           }}
-          // pagination={{ clickable: true }}
-          className="my-card-swiper  " // Set explicit dimensions for the Swiper container
+          className="my-card-swiper"
         >
           {consultingCards.map((card) => (
             <SwiperSlide key={card.id}>
-              {(
-                { isActive } // Use isActive to style the current card
-              ) => (
+              {({ isActive }) => (
                 <div
                   className={`
                     relative w-full h-full p-[50px] 
@@ -95,7 +88,6 @@ rounded-[10px]  border-[1px] border-white bg-white shadow-[0px_-23px_25.3px_0px_
                     ${isActive ? "opacity-100 z-20" : "opacity-90 z-10"}
                   `}
                 >
-                  <div></div>
                   {/* Image */}
                   <div className="relative min-w-[414px] h-full border-[5px] border-white rounded-lg ">
                     <Image
@@ -139,7 +131,7 @@ rounded-[10px]  border-[1px] border-white bg-white shadow-[0px_-23px_25.3px_0px_
                       transition-colors duration-200
                       focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
 
-                      rounded-[10px] border border-[2px] border-[rgba(0,35,75,0.10)] bg-[radial-gradient(83.54%_74.04%_at_37.13%_12%,_rgba(255,255,255,0.43)_0%,_rgba(255,255,255,0.00)_69.79%,_rgba(255,255,255,0.00)_100%)]
+                      rounded-[10px]  border-[2px] border-[rgba(0,35,75,0.10)] bg-[radial-gradient(83.54%_74.04%_at_37.13%_12%,_rgba(255,255,255,0.43)_0%,_rgba(255,255,255,0.00)_69.79%,_rgba(255,255,255,0.00)_100%)]
                     "
                       >
                         Read Details
@@ -151,11 +143,12 @@ rounded-[10px]  border-[1px] border-white bg-white shadow-[0px_-23px_25.3px_0px_
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="button-custom v2 mt-[60px]">
+      </div>
+      <div className="text-center ">
+        <button className="button-custom v2 mt-[60px] ">
           View all services
         </button>
       </div>
-
       {/* left bg */}
       <div className="absolute left-0 top-0 z-[-1]">
         <Image

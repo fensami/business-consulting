@@ -1,13 +1,10 @@
-// components/NewsletterSubscription.jsx
-
 import React from "react";
-import { FiBell } from "react-icons/fi"; // Importing a bell icon from Feather Icons (part of react-icons)
+import { FiBell } from "react-icons/fi";
 
 const NewsletterSubscription = () => {
   return (
     <div className=" container mx-auto mt-[60px]">
       <div className="w-full px-[70px] py-[50px] rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-10 bg-[linear-gradient(90deg,_#6B4BF6_0%,_#D954A3_100%)]">
-        {/* Left Section: Text and Icon */}
         <div className="flex items-center space-x-4 text-white text-center md:text-left">
           <div className="p-4 rounded-full border border-white border-opacity-40 flex items-center justify-center">
             <FiBell className="text-4xl text-white" />
@@ -22,7 +19,6 @@ const NewsletterSubscription = () => {
           </div>
         </div>
 
-        {/* Right Section: Email Input and Subscribe Button */}
         <div
           className="grid grid-cols-2 w-full md:w-auto pl-[25px] pr-[10px] pt-[10px] pb-[10px] "
           style={{

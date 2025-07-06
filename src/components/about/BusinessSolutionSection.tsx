@@ -90,7 +90,6 @@ const BusinessSolutionSection = () => {
                 ></Image>
               </div>
               <p className="text-gray-600 text-sm">CEO at Company</p>
-              {/* Note: The signature image would typically be a background image or a separate Image component positioned absolutely/flex-child for exact placement. For simplicity, I'm just putting text here. If it's a static image, use <Image src="/path/to/signature.png" alt="Signature" width={...} height={...} /> */}
             </div>
           </div>
         </div>

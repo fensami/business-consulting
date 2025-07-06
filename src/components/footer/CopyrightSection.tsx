@@ -1,10 +1,8 @@
-// components/CopyrightSection.jsx
-
 import React from "react";
 import Link from "next/link";
 
 const CopyrightSection = () => {
-  const currentYear = new Date().getFullYear(); // Dynamically get the current year
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="bg-[#1a0033] text-white py-[60px] container mx-auto">

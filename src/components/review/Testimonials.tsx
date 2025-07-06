@@ -1,19 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// components/TestimonialSlider.jsx
 "use client";
 import React, { useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-// import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
-// import "./styles.css";
-
-// import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import Image from "next/image";
 import { MdOutlineStar, MdOutlineStarHalf } from "react-icons/md";

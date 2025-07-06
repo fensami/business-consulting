@@ -1,5 +1,3 @@
-// components/Navbar.js
-
 import Link from "next/link";
 import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai"; // Import icons
 import { IoIosArrowDown } from "react-icons/io";
