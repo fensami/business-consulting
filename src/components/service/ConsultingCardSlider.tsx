@@ -43,7 +43,7 @@ const consultingCards = [
 const ConsultingCardSlider = () => {
   return (
     <section className="bg-gradient-to-br from-blue-50 to-purple-50 relative overflow-hidden pt-[100px] pb-[120px] service-section z-[1]">
-      <div className="container mx-auto h-[600px]  relative z-10 flex flex-col justify-center items-center">
+      <div className="container mx-auto h-[1200px] xl:h-[600px]  relative z-10 flex  flex-col justify-center items-center">
         <div
           className="
                     inline-flex items-center space-x-2 px-4 py-2 mb-6
@@ -79,7 +79,7 @@ const ConsultingCardSlider = () => {
                 <div
                   className={`
                     relative w-full h-full p-[50px] 
-                    flex items-center
+                    flex flex-wrap items-center
                     transition-all duration-300 ease-in-out
                     gap-[62px]
 
@@ -89,11 +89,12 @@ rounded-[10px]  border-[1px] border-white bg-white shadow-[0px_-23px_25.3px_0px_
                   `}
                 >
                   {/* Image */}
-                  <div className="relative min-w-[414px] h-full border-[5px] border-white rounded-lg ">
+                  <div className="  border-[5px] border-white rounded-lg ">
                     <Image
                       src={card.image}
                       alt={card.title}
-                      fill
+                      width={414}
+                      height={307}
                       objectFit="cover"
                       className="rounded-lg"
                     />

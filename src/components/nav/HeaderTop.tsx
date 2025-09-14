@@ -17,7 +17,7 @@ const HeaderTop = () => {
   return (
     <div className="container mx-auto mt-5">
       <div className="bg-gradient-to-r from-[#f8f9fc] to-[#fdfdff] py-[19px] shadow-sm rounded-[10px]">
-        <div className=" flex flex-wrap justify-between items-center text-sm text-gray-600 px-[30px]">
+        <div className=" flex flex-wrap gap-4 justify-between items-center text-sm text-gray-600 px-[30px]">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 font-medium text-[14px]">
               <FaMapMarkerAlt className="text-gray-500" />

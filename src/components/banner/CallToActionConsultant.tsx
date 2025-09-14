@@ -4,7 +4,7 @@ import { LuPhoneCall } from "react-icons/lu";
 
 const CallToActionConsultant = () => {
   return (
-    <div className="flex gap-8">
+    <div className="flex flex-wrap gap-8">
       <Link href="/explore-more">
         <button
           className="
@@ -26,8 +26,8 @@ const CallToActionConsultant = () => {
         </button>
       </Link>
 
-      <div className="flex items-center space-x-4">
-        <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full border-2 border-gray-300 border-opacity-50 text-blue-500 bg-white bg-opacity-10 backdrop-blur-sm">
+      <div className="flex flex-wrap items-center space-x-4">
+        <div className="w-[50px] h-[50px] flex flex-wrap items-center justify-center rounded-full border-2 border-gray-300 border-opacity-50 text-blue-500 bg-white bg-opacity-10 backdrop-blur-sm">
           <LuPhoneCall className="text-[20px] text-blue-500" />
         </div>
 

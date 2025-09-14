@@ -4,8 +4,8 @@ import { FiBell } from "react-icons/fi";
 const NewsletterSubscription = () => {
   return (
     <div className=" container mx-auto mt-[60px]">
-      <div className="w-full px-[70px] py-[50px] rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-10 bg-[linear-gradient(90deg,_#6B4BF6_0%,_#D954A3_100%)]">
-        <div className="flex items-center space-x-4 text-white text-center md:text-left">
+      <div className="w-full px-[30px] xl:px-[70px] py-[50px] rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-10 bg-[linear-gradient(90deg,_#6B4BF6_0%,_#D954A3_100%)]">
+        <div className="flex flex-wrap items-center space-x-4 text-white text-center md:text-left">
           <div className="p-4 rounded-full border border-white border-opacity-40 flex items-center justify-center">
             <FiBell className="text-4xl text-white" />
           </div>
@@ -20,7 +20,7 @@ const NewsletterSubscription = () => {
         </div>
 
         <div
-          className="grid grid-cols-2 w-full md:w-auto pl-[25px] pr-[10px] pt-[10px] pb-[10px] "
+          className="grid xl:grid-cols-2 w-full md:w-auto pl-[25px] pr-[10px] pt-[10px] pb-[10px] "
           style={{
             borderRadius: "10px",
             border: "2px solid rgba(255, 255, 255, 0.35)",
@@ -39,7 +39,7 @@ const NewsletterSubscription = () => {
           />
           <button
             type="submit"
-            className="p-3 rounded-xl font-semibold text-white transition-all duration-300 transform hover:scale-105 w-[130px] ml-auto"
+            className="p-3 rounded-xl font-semibold text-white transition-all duration-300 transform hover:scale-105 w-[100px] xl:w-[130px] xl:ml-auto"
             style={{
               background: "linear-gradient(90deg, #60A5FA 0%, #8B5CF6 100%)",
               boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",

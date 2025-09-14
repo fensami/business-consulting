@@ -1,4 +1,3 @@
-import React from "react";
 import CallToActionConsultant from "./CallToActionConsultant";
 import RegisteredUsersDisplay from "./RegisteredUsersDisplay";
 import Image from "next/image";
@@ -12,11 +11,11 @@ const bannerMainImage =
   "https://res.cloudinary.com/dsc0hliud/image/upload/v1751688830/Group_1_tfiuj3.png";
 const Banner = () => {
   return (
-    <section className=" py-[110px] relative">
+    <section className=" py-[110px] relative px-5">
       <div className="container mx-auto">
-        <div className="grid grid-cols-7">
+        <div className="grid lg:grid-cols-7">
           <div className="col-span-5">
-            <h1 className=" banner-title relative">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[100px] font-bold relative">
               We shape the future of
               <span className="business-text"> business</span>
               <span className="absolute top-[-40px] right-[-40px]">
@@ -48,7 +47,7 @@ const Banner = () => {
       </div>
       {/* Banner Main Image */}
       <div className="banner-main-image absolute right-[0px] bottom-[-100px]">
-        <div className="relative w-[1134px] h-[700px]">
+        <div className="relative w-full h-full 2xl:w-[1134px] 2xl:h-[700px]">
           <Image src={bannerMainImage} alt="banner left bg image" fill></Image>
         </div>
       </div>

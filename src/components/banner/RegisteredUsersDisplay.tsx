@@ -4,7 +4,7 @@ import { FiPlus } from "react-icons/fi";
 
 const RegisteredUsersDisplay = () => {
   return (
-    <div className="flex items-center gap-[20px] mt-[60px]">
+    <div className="flex flex-wrap items-center gap-[20px] mt-[60px]">
       {/* Avatar Stack */}
       <div className="flex -space-x-3">
         {/* Avatar 1 */}
@@ -57,7 +57,7 @@ const RegisteredUsersDisplay = () => {
       </div>
 
       {/* Text Content */}
-      <div className="flex flex-col">
+      <div className="flex flex-wrap flex-col">
         <p className=" text-[#838A95] text-[16px] font-normal">
           <span className="text-blue-600">2.5K+</span> Business Peoples
         </p>

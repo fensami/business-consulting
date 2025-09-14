@@ -9,13 +9,18 @@ const aboutCompanyExperianceImage =
   "https://res.cloudinary.com/dsc0hliud/image/upload/v1751692204/Comapny_Experience_ibkrio.png";
 const About = () => {
   return (
-    <section className="relative">
-      <div className="container mx-auto py-[110px]">
-        <div className="grid grid-cols-12 items-center gap-6">
-          <div className=" col-span-5 h-[600px]">
+    <section className="relative px-5">
+      <div className="container mx-auto py-[60px] md:py-[110px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-6">
+          <div className=" lg:col-span-5 h-[600px]">
             <div className="relative">
-              <div className="about-big-image relative w-[318px] h-[540px] rounded-[10px] overflow-hidden">
-                <Image src={aboutBigImage} alt="about big image" fill></Image>
+              <div className="about-big-image relative w-full sm:w-[318px] h-[540px] rounded-[10px] overflow-hidden">
+                <Image
+                  src={aboutBigImage}
+                  alt="about big image"
+                  fill
+                  className="object-cover"
+                ></Image>
               </div>
               <div className="absolute bottom-[-60px] right-0">
                 <div className="about-big-image relative w-[308px] h-[360px] rounded-[10px] overflow-hidden ">
@@ -37,7 +42,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className=" col-span-7 pl-[50px]">
+          <div className=" lg:col-span-7 xl:pl-[50px]">
             <BusinessSolutionSection />
           </div>
         </div>

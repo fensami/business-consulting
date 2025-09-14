@@ -10,7 +10,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="container mx-auto pb-[100px]">
+    <section className="container mx-auto pb-[100px] px-5">
       <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {stats.map((stat, index) => (
           <div key={index} className="status-items">

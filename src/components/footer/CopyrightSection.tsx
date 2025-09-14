@@ -6,12 +6,12 @@ const CopyrightSection = () => {
 
   return (
     <div className="bg-[#1a0033] text-white py-[60px] container mx-auto">
-      <div className="flex  items-center justify-between text-sm">
+      <div className="flex flex-wrap gap-5  items-center justify-between text-sm">
         {/* Copyright Information */}
         <div className="mb-4 md:mb-0 text-center md:text-left">
           {currentYear}{" "}
           <span className="text-purple-400">
-            <Link href="/">Rainbow Themes.</Link>
+            <Link href="/">Rainbow Themes.</Link>{" "}
           </span>
           All Rights Reserved.
         </div>

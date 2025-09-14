@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1a0033] text-white pt-16 px-4 sm:px-6 lg:px-8 relative z-[1]">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12 container mx-auto">
-        <div className="col-span-1 md:col-span-2 bg-[linear-gradient(145deg,rgba(254,113,185,0.04)_-2.12%,rgba(20,2,73,0.01)_121.13%)] h-auto p-[40px] rounded-[10px]">
+        <div className="col-span-1 md:col-span-2 bg-[linear-gradient(145deg,rgba(254,113,185,0.04)_-2.12%,rgba(20,2,73,0.01)_121.13%)] h-auto xl:p-[40px] rounded-[10px]">
           <Link href="/">
             <div className="flex items-center space-x-2">
               <Image
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 col-span-1 md:col-span-3  py-[40px] px-[50px] rounded-[10px] bg-[linear-gradient(145deg,rgba(254,113,185,0.04)_-2.12%,rgba(20,2,73,0.01)_121.13%)]">
+        <div className="grid grid-cols-1 md:grid-cols-3 col-span-1 md:col-span-3  xl:py-[40px] xl:px-[50px] rounded-[10px] bg-[linear-gradient(145deg,rgba(254,113,185,0.04)_-2.12%,rgba(20,2,73,0.01)_121.13%)]">
           {/* Quick Link Section */}
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-6">Quick Link</h3>
